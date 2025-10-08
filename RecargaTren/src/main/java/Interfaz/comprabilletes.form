@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="a2684" binding="panelNav" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="a2684" binding="panelNav" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -19,7 +19,7 @@
           <grid id="fa9d6" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -60,6 +60,8 @@
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16777216"/>
                           <model>
                             <item value="Elegir Estación"/>
                             <item value="Madrid Puerta de Atocha – Almudena Grandes"/>
@@ -120,6 +122,8 @@
                           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
                           <model>
                             <item value="SIN DESCUENTO"/>
                             <item value="CARNET JOVEN"/>
@@ -171,6 +175,8 @@
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
                           <model>
                             <item value="Elegir Estación"/>
                             <item value="Madrid Puerta de Atocha – Almudena Grandes"/>
@@ -238,7 +244,10 @@
                         <constraints>
                           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
+                        </properties>
                       </component>
                     </children>
                   </grid>
@@ -310,7 +319,7 @@
           <grid id="89e92" binding="panelcalendario" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="line">
@@ -334,16 +343,26 @@
                   <text value="Vuelta:"/>
                 </properties>
               </component>
-              <grid id="becbc" binding="panelIda" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="46b67" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
-                <border type="line">
-                  <color color="-8122772"/>
-                </border>
-                <children/>
+                <border type="none"/>
+                <children>
+                  <grid id="becbc" binding="panelIda" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <color color="-8122772"/>
+                    </border>
+                    <children/>
+                  </grid>
+                </children>
               </grid>
               <grid id="58e1f" binding="panelVuelta" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
@@ -361,7 +380,7 @@
           <grid id="4bea0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -381,7 +400,7 @@
           <grid id="bc25c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="3" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -400,7 +419,7 @@
           <grid id="c226" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="4" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -410,11 +429,20 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="image/renfe-publicidad 1 (1).jpg"/>
+                  <icon value="image/38.jpg"/>
                   <text value=""/>
                 </properties>
               </component>
             </children>
+          </grid>
+          <grid id="a0f63" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
           </grid>
         </children>
       </grid>
