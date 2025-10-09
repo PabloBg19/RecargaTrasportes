@@ -10,7 +10,7 @@
 
 #Interfaz 3:
 
-![Interfazbillete](interfazbillete.png)
+![Interfazbillete](interfazbilete.png)
 
 # Sistema de Compra de Billetes RENFE
 
