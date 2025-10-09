@@ -26,7 +26,7 @@ public class RenfeInterfaz {
     private JLabel edadlabel;
     private JLabel añoslabel;
     private JLabel dnilabel;
-    private JComboBox comboBox1;
+    private JRadioButton guardarUsuarioRadioButton;
 
     public RenfeInterfaz() {
         accederButton.addActionListener(e -> {
