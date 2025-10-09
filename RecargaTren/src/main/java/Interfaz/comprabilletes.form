@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Interfaz.comprabilletes">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="862" height="583"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a2684" binding="panelNav" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="fa9d6" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="86831" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="image/renfe.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="8f7bc" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line">
+                  <title-color color="-197381"/>
+                  <color color="-8122772"/>
+                </border>
+                <children>
+                  <grid id="5313f" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <title-color color="-8122772"/>
+                      <color color="-8122772"/>
+                    </border>
+                    <children>
+                      <component id="e120e" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16777216"/>
+                          <model>
+                            <item value="Elegir Estación"/>
+                            <item value="Madrid Puerta de Atocha – Almudena Grandes"/>
+                            <item value="Madrid Chamartín Clara Campoamor"/>
+                            <item value="Barcelona Sants"/>
+                            <item value="Valencia Joaquín Sorolla"/>
+                            <item value="Valencia-Nord"/>
+                            <item value="Sevilla-Santa Justa"/>
+                            <item value="Málaga María Zambrano"/>
+                            <item value="Zaragoza–Delicias"/>
+                            <item value="Córdoba"/>
+                            <item value="Granada"/>
+                            <item value="Alicante–Terminal"/>
+                            <item value="Albacete–Los Llanos"/>
+                            <item value="Valladolid–Campo Grande"/>
+                            <item value="León"/>
+                            <item value="Bilbao–Abando Indalecio Prieto"/>
+                            <item value="San Sebastián / Donostia"/>
+                            <item value="Pamplona / Iruña"/>
+                            <item value="Logroño"/>
+                            <item value="Burgos–Rosa de Lima"/>
+                            <item value="Tarragona"/>
+                            <item value="Girona"/>
+                            <item value="Figueres–Vilafant"/>
+                            <item value="Lleida–Pirineus"/>
+                            <item value="Murcia–Del Carmen"/>
+                            <item value="Cartagena"/>
+                            <item value="Almería"/>
+                            <item value="Cádiz"/>
+                            <item value="Jerez de la Frontera"/>
+                            <item value="Santander"/>
+                            <item value="Vitoria–Gasteiz"/>
+                            <item value="Badajoz"/>
+                            <item value="Mérida"/>
+                            <item value="Salamanca"/>
+                            <item value="Huelva"/>
+                            <item value="Soria"/>
+                            <item value="Toledo"/>
+                            <item value="Ávila"/>
+                            <item value="Segovia–Guiomar"/>
+                            <item value="Cuenca–Fernando Zóbel"/>
+                            <item value="Ourense–Empalme"/>
+                            <item value="Santiago de Compostela"/>
+                            <item value="A Coruña–San Cristóbal"/>
+                            <item value="Pontevedra"/>
+                            <item value="Vigo–Urzaiz"/>
+                            <item value="Gijón–Sanz Crespo"/>
+                            <item value="Oviedo"/>
+                            <item value="Zamora"/>
+                            <item value="Ciudad Real"/>
+                            <item value="Puertollano"/>
+                            <item value="Huesca"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="acce2" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
+                          <model>
+                            <item value="SIN DESCUENTO"/>
+                            <item value="CARNET JOVEN"/>
+                            <item value="JUBILADO"/>
+                            <item value="DISCAPACIDAD"/>
+                            <item value="ESTUDIANTE"/>
+                            <item value="CARNET RENFE"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="f6dd4" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Origen: "/>
+                        </properties>
+                      </component>
+                      <component id="af270" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Descuento:"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="1517e" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <color color="-8122772"/>
+                    </border>
+                    <children>
+                      <component id="a5784" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Destino:"/>
+                        </properties>
+                      </component>
+                      <component id="9121a" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
+                          <model>
+                            <item value="Elegir Estación"/>
+                            <item value="Madrid Puerta de Atocha – Almudena Grandes"/>
+                            <item value="Madrid Chamartín Clara Campoamor"/>
+                            <item value="Barcelona Sants"/>
+                            <item value="Valencia Joaquín Sorolla"/>
+                            <item value="Valencia-Nord"/>
+                            <item value="Sevilla-Santa Justa"/>
+                            <item value="Málaga María Zambrano"/>
+                            <item value="Zaragoza–Delicias"/>
+                            <item value="Córdoba"/>
+                            <item value="Granada"/>
+                            <item value="Alicante–Terminal"/>
+                            <item value="Albacete–Los Llanos"/>
+                            <item value="Valladolid–Campo Grande"/>
+                            <item value="León"/>
+                            <item value="Bilbao–Abando Indalecio Prieto"/>
+                            <item value="San Sebastián / Donostia"/>
+                            <item value="Pamplona / Iruña"/>
+                            <item value="Logroño"/>
+                            <item value="Burgos–Rosa de Lima"/>
+                            <item value="Tarragona"/>
+                            <item value="Girona"/>
+                            <item value="Figueres–Vilafant"/>
+                            <item value="Lleida–Pirineus"/>
+                            <item value="Murcia–Del Carmen"/>
+                            <item value="Cartagena"/>
+                            <item value="Almería"/>
+                            <item value="Cádiz"/>
+                            <item value="Jerez de la Frontera"/>
+                            <item value="Santander"/>
+                            <item value="Vitoria–Gasteiz"/>
+                            <item value="Badajoz"/>
+                            <item value="Mérida"/>
+                            <item value="Salamanca"/>
+                            <item value="Huelva"/>
+                            <item value="Soria"/>
+                            <item value="Toledo"/>
+                            <item value="Ávila"/>
+                            <item value="Segovia–Guiomar"/>
+                            <item value="Cuenca–Fernando Zóbel"/>
+                            <item value="Ourense–Empalme"/>
+                            <item value="Santiago de Compostela"/>
+                            <item value="A Coruña–San Cristóbal"/>
+                            <item value="Pontevedra"/>
+                            <item value="Vigo–Urzaiz"/>
+                            <item value="Gijón–Sanz Crespo"/>
+                            <item value="Oviedo"/>
+                            <item value="Zamora"/>
+                            <item value="Ciudad Real"/>
+                            <item value="Puertollano"/>
+                            <item value="Huesca"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="cbe34" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Pasajeros:"/>
+                        </properties>
+                      </component>
+                      <component id="6a9a7" class="javax.swing.JSpinner" binding="spinner1" default-binding="true">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-327685"/>
+                          <foreground color="-16053492"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="49af0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8257442"/>
+                  <foreground color="-8257442"/>
+                  <icon value="image/train-reel-tab-1.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="67694" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="9592b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <color color="-8122772"/>
+                    </border>
+                    <children>
+                      <component id="22ee7" class="javax.swing.JCheckBox" binding="llevoPerroCheckBox" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Llevo Perro"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="a1e46" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <color color="-8122772"/>
+                    </border>
+                    <children>
+                      <component id="97c24" class="javax.swing.JCheckBox" binding="plazaHDisponibleCheckBox" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Plaza H disponible"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="89e92" binding="panelcalendario" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="line">
+              <title-color color="-8122772"/>
+              <color color="-8122772"/>
+            </border>
+            <children>
+              <component id="e5d85" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ida:"/>
+                </properties>
+              </component>
+              <component id="5fc4d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Vuelta:"/>
+                </properties>
+              </component>
+              <grid id="46b67" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="becbc" binding="panelIda" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line">
+                      <color color="-8122772"/>
+                    </border>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="58e1f" binding="panelVuelta" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line">
+                  <color color="-8122772"/>
+                </border>
+                <children/>
+              </grid>
+            </children>
+          </grid>
+          <grid id="4bea0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d3091" class="javax.swing.JButton" binding="BUSCARButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8122772"/>
+                  <foreground color="-1"/>
+                  <text value="BUSCAR"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="bc25c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="3" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="accb1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="image/renfe-publicidad 1 (1).jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c226" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="4" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d3958" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="image/38.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a0f63" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
