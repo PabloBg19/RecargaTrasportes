@@ -32,6 +32,10 @@ AbonoBus (Inicio de sesión)
 
 ## 🧩 1. `AbonoBus`
 
+#Imagen de la interfaz
+
+![Interfaz1](interfaz1.png)
+
 ### 📝 Descripción
 
 Esta es la **primera pantalla** que ve el usuario.  
