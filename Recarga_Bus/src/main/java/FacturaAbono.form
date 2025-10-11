@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="FacturaAbono">
+  <grid id="27dc6" binding="Factura" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="5515e" class="javax.swing.JLabel" binding="Titulo">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font size="22" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value="Factura de Recarga - TUSSAM"/>
+        </properties>
+      </component>
+      <grid id="a02f7" layout-manager="GridBagLayout">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d5f1d" class="javax.swing.JLabel" binding="Inicio">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Fecha de inicio"/>
+            </properties>
+          </component>
+          <hspacer id="57925">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <component id="b77dd" class="javax.swing.JLabel" binding="Fin">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Fecha de finalizacion"/>
+            </properties>
+          </component>
+          <component id="daa2e" class="javax.swing.JLabel" binding="Dias">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Numero de dias"/>
+            </properties>
+          </component>
+          <component id="3563a" class="javax.swing.JLabel" binding="PrecioDia">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Precio por día: 0,15€"/>
+            </properties>
+          </component>
+          <component id="f0000" class="javax.swing.JLabel" binding="Total">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Total"/>
+            </properties>
+          </component>
+          <component id="e8af2" class="javax.swing.JLabel" binding="NumeroTarjeta">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Nuemero de targeta"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="d1641" class="javax.swing.JButton" binding="buttonCerrar">
+        <constraints border-constraint="South"/>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Cerrar"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
