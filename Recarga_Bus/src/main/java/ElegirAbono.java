@@ -35,24 +35,27 @@ public class ElegirAbono
 
     public ElegirAbono()
     {
+        //Ajustamos márgenes para que cuadre
         BannerInferior.setBorder(BorderFactory.createEmptyBorder(20, 0, 10, 0));
         LogoyBus.setBorder(BorderFactory.createEmptyBorder(20, 0, 20, 0));
         Recargar.setBorder(BorderFactory.createEmptyBorder(0, 0, 100, 0));
         Numero.setBorder(BorderFactory.createEmptyBorder(100, 0, 0, 0));
         Targeta.setBorder(BorderFactory.createEmptyBorder(30, 50, 30, 50));
 
-        // Configurar calendarios
+        //Configuramos los calendarios del inicio y el fin
+        //Calendario inicio
         CalendarioInicio.setLayout(new BorderLayout());
         JDateChooser dateChooserInicio = new JDateChooser();
         CalendarioInicio.add(dateChooserInicio, BorderLayout.CENTER);
         CalendarioInicio.setBorder(BorderFactory.createEmptyBorder(40, 0, 40, 40));
 
+        //Calendario fin
         CalendarioFin.setLayout(new BorderLayout());
         JDateChooser dateChooserFin = new JDateChooser();
         CalendarioFin.add(dateChooserFin, BorderLayout.CENTER);
         CalendarioFin.setBorder(BorderFactory.createEmptyBorder(40, 0, 40, 40));
 
-        // 🟢 Validar al pulsar "Recargar"
+        //Hacemos comprobaciones al pulsar el boton de recarga
         recargarButton.addActionListener(e -> {
             String numeroTarjeta = textField1.getText().trim();
             java.util.Date fechaInicio = dateChooserInicio.getDate();
@@ -60,13 +63,13 @@ public class ElegirAbono
 
             StringBuilder mensaje = new StringBuilder();
 
-            // ✅ Validar número de tarjeta (10 dígitos)
+            //Validamos que la targeta tenga 10 números
             if (!numeroTarjeta.matches("\\d{10}"))
             {
                 mensaje.append(" - El número de tarjeta debe tener exactamente 10 dígitos.\n");
             }
 
-            // ✅ Validar que las fechas estén seleccionadas
+            //Comprobamos que las fechas están seleccionadas
             if (fechaInicio == null)
             {
                 mensaje.append(" - Debes seleccionar una fecha de inicio.\n");
@@ -76,13 +79,13 @@ public class ElegirAbono
                 mensaje.append(" - Debes seleccionar una fecha de finalización.\n");
             }
 
-            // ✅ Validar que la fecha de fin sea posterior a la de inicio
+            //Verificamos que la fecha de fin no sea anterior a la de inicio
             if (fechaInicio != null && fechaFin != null && !fechaFin.after(fechaInicio))
             {
                 mensaje.append(" - La fecha de finalización debe ser posterior a la de inicio.\n");
             }
 
-            // ✅ Mostrar mensaje según el resultado
+            //Mostramos un mensaje en caso de fallar alguna validación
             if (mensaje.length() > 0)
             {
                 JOptionPane.showMessageDialog(null,
@@ -91,9 +94,10 @@ public class ElegirAbono
                         JOptionPane.WARNING_MESSAGE);
             }
 
+            //En caso de validar, se abre la pestaña correspondiente a FacturaAbono
             else
             {
-                FacturaAbono factura = new FacturaAbono(fechaInicio, fechaFin);
+                FacturaAbono factura = new FacturaAbono(fechaInicio, fechaFin, numeroTarjeta);
                 JFrame frameFactura = new JFrame("Factura de Recarga");
                 frameFactura.setContentPane(factura.getPanel());
                 frameFactura.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

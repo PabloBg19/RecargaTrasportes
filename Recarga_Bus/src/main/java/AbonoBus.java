@@ -31,12 +31,13 @@ public class AbonoBus
 
     public AbonoBus()
     {
-        // Márgenes laterales
+        // Creamos márgenes en los laterales para separar las imágenes de los bordes
         int margen = 60;
+
         AnuncioIzda.setBorder(new EmptyBorder(margen, margen, margen, margen));
         AnuncioDer.setBorder(new EmptyBorder(margen, margen, margen, margen));
 
-        // Escalar imágenes dinámicamente
+        // Escalamos las imágenes dinamicamente
         ComponentAdapter resizeListener = new ComponentAdapter()
         {
             @Override
@@ -50,7 +51,7 @@ public class AbonoBus
         Anuncio1.addComponentListener(resizeListener);
         Anuncio2.addComponentListener(resizeListener);
 
-        // 🟢 Acción del botón "Acceder"
+        // Le damos acción al botón acceder
         buttonAcceder.addActionListener(new ActionListener()
         {
             @Override
@@ -61,28 +62,35 @@ public class AbonoBus
         });
     }
 
-    // Método que valida los campos del formulario
+    // Creamos validarCampos para comprobar que antes de acceder los estén campos de forma correcta
     private void validarCampos()
     {
+        //Creamos Strings para guardar los dátos introducidos
         String nombre = textFieldNombre.getText().trim();
         String apellidos = textFieldApellidos.getText().trim();
         String dni = textFieldDNI.getText().trim().toUpperCase();
         boolean aceptaTyC = checkBoxTyC.isSelected();
 
+        //Creamos un StringBuilder para crear un mensaje en caso de haber campos incompletos
         StringBuilder mensaje = new StringBuilder();
 
+        //Comprobamos que los campos nombre y apellidos no estén vacios,
+        //en caso contrario, añade Nombre o Apellidos al mensaje
         if (nombre.isEmpty()) mensaje.append(" - Nombre\n");
         if (apellidos.isEmpty()) mensaje.append(" - Apellidos\n");
 
+        //Sentencia if para comprobar el DNI
         if (dni.isEmpty())
         {
             mensaje.append(" - DNI\n");
         }
+        //Llama a DNIValido para comprobar el formato
         else if (!esDNIValido(dni))
         {
             mensaje.append(" - DNI con formato incorrecto\n");
         }
 
+        //Comprueba los Términos y Condiciones
         if (!aceptaTyC) mensaje.append(" - Aceptar los Términos y Condiciones\n");
 
         if (mensaje.length() > 0)
@@ -94,10 +102,10 @@ public class AbonoBus
         }
         else
         {
-            // Cerrar la ventana actual
+            //Cerramos la ventana
             SwingUtilities.getWindowAncestor(AbonoBus).dispose();
 
-            // Abrir la nueva ventana ElegirAbono
+            //Abrimos la ventana correspondiente a ElegirAbono
             ElegirAbono elegirAbono = new ElegirAbono();
             JFrame frameElegir = new JFrame("Elegir Abono");
             frameElegir.setContentPane(elegirAbono.getPanel());
@@ -107,16 +115,16 @@ public class AbonoBus
         }
     }
 
-    // 🧩 Validar formato y letra del DNI
+    //Validamos el formato del DNI
     private boolean esDNIValido(String dni)
     {
-        // Formato general: 8 números seguidos de una letra
+        //Comprueba que el formato son 8 números y una letra
         if (!dni.matches("^[0-9]{8}[A-Z]$"))
         {
             return false;
         }
 
-        // Validar la letra del DNI
+        //Comprueba que la letra es la correcta
         String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
         int numero = Integer.parseInt(dni.substring(0, 8));
         char letraCorrecta = letras.charAt(numero % 23);
@@ -125,18 +133,27 @@ public class AbonoBus
         return letraCorrecta == letraIntroducida;
     }
 
+    //Ajustamos las imágenes
     private void ajustarImagen(JLabel label)
     {
+        //Sentencia para comprobar que el formato de la imágen es el correcto
         if (label.getIcon() != null && label.getIcon() instanceof ImageIcon)
         {
+            //Obtenemos el ancho y el alto
             int w = label.getWidth();
             int h = label.getHeight();
 
+            //Si el alto o el ancho son 0 o negativos, termina la sentencia y no intenta escalar la imagen
             if (w <= 0 || h <= 0) return;
 
+            //Obtenemos la imagen
             ImageIcon icon = (ImageIcon) label.getIcon();
             Image img = icon.getImage();
+
+            //Creamos una versión redimensionada de la imagen
             Image newImg = img.getScaledInstance(w, h, Image.SCALE_SMOOTH);
+
+            //Reemplazamos la imagen
             label.setIcon(new ImageIcon(newImg));
         }
     }
