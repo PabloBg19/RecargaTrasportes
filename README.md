@@ -34,7 +34,7 @@ AbonoBus (Inicio de sesión)
 
 #Imagen de la interfaz
 
-![Interfaz1](interfaz1.png)
+![Interfaz1](Interfaz1.png)
 
 ### 📝 Descripción
 
