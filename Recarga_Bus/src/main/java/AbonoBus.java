@@ -46,6 +46,7 @@ public class AbonoBus
                 ajustarImagen(Anuncio2);
             }
         };
+
         Anuncio1.addComponentListener(resizeListener);
         Anuncio2.addComponentListener(resizeListener);
 
@@ -93,10 +94,16 @@ public class AbonoBus
         }
         else
         {
-            JOptionPane.showMessageDialog(null,
-                    "Inicio de sesión correcto ✅",
-                    "Acceso permitido",
-                    JOptionPane.INFORMATION_MESSAGE);
+            // Cerrar la ventana actual
+            SwingUtilities.getWindowAncestor(AbonoBus).dispose();
+
+            // Abrir la nueva ventana ElegirAbono
+            ElegirAbono elegirAbono = new ElegirAbono();
+            JFrame frameElegir = new JFrame("Elegir Abono");
+            frameElegir.setContentPane(elegirAbono.getPanel());
+            frameElegir.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frameElegir.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            frameElegir.setVisible(true);
         }
     }
 
