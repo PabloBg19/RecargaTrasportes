@@ -77,6 +77,10 @@ private boolean esDNIValido(String dni) {
 
 ## 🧾 2. `ElegirAbono`
 
+#Imagen de la interfaz
+
+![Interfaz2](Interfaz2.png)
+
 ### 📝 Descripción
 
 Una vez validado el usuario, esta interfaz permite al usuario **introducir el número de su tarjeta de transporte** y **seleccionar las fechas de inicio y fin del abono** usando un **selector de calendario** (`JDateChooser`).
@@ -112,6 +116,10 @@ if (fechaInicio != null && fechaFin != null && !fechaFin.after(fechaInicio)) {
 ---
 
 ## 💶 3. `FacturaAbono`
+
+#Imagen de la interfaz
+
+![Interfaz3](Interfaz3.png)
 
 ### 📝 Descripción
 
